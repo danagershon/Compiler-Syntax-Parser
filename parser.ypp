@@ -1,5 +1,5 @@
 %{
-#include "attributes.h"
+/* #include "attributes.h" */
 extern int yylex();
 extern int yylineno; /* to use in yyerror */
 int yyerror(const char* message);
@@ -12,7 +12,7 @@ int yyerror(const char* message);
      for example: %token<int_val> NUM, %type<exp> Exp
 */
 
-%token VOID INT
+%token VOID INT NUM
 %left OR
 %left AND /* AND has higher precedence than OR */
 

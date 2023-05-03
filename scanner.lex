@@ -1,7 +1,7 @@
 /* definition section */
 %{
 /* declarations section */
-#include "attributes.h"
+/* #include "attributes.h" */
 #include "parser.tab.hpp"
 %}
 

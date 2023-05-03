@@ -6,7 +6,7 @@ output.cpp, output.hpp:
 supplied printing functions and rules list from course staff
 
 attributes.h:
-contains declaration for our type for YYSTYPE
+for hw3:- contains declaration for our type for YYSTYPE
 
 Makefile-hw2:
 to build the project
