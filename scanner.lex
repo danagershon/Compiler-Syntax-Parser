@@ -2,6 +2,7 @@
 %{
 /* declarations section */
 /* #include "attributes.h" */
+#include "output.hpp"
 #include "parser.tab.hpp"
 %}
 
@@ -39,22 +40,28 @@ continue           {return CONTINUE;}
 \)                 {return RPAREN;}
 \{                 {return LBRACE;}
 \}                 {return RBRACE;}
-=                  {return ASSIGN;}
+"="                {return ASSIGN;}
 
-/* TODO: split operations to different tokens so that we
-can assign associativity for them in the parser */
+"=="               {return EQUAL;}
+"!="               {return NOT_EQUAL;}
+"<="               {return LESS_EQUAL;}
+">="               {return GREATER_EQUAL;}
+">"                {return GREATER;}
+"<"                {return LESS;}
 
-[<>]=?|[=!]=       {return RELOP; }
-[\+\*\-/]          {return BINOP; }
+\+                 {return PLUS;}
+\*                 {return MUL;}
+\-                 {return MINUS;}
+"/"                {return DIV;}
 
-{ID}               {return ID; }
-{NUM}              {return NUM; }
+{ID}               {return ID;}
+{NUM}              {return NUM;}
 {COMMENT}          {}
-{STRING}           {return STRING; }
+{STRING}           {return STRING;}
 
 {WHITESPACE}       {}
 
-.                  {errorLex(yylineno);
+.                  {output::errorLex(yylineno);
                     exit(0);}
 
 %%

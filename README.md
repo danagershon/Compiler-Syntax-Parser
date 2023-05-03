@@ -5,10 +5,7 @@ Theory of Compilation spring 23 HW2: building a parser with Bison
 output.cpp, output.hpp:
 supplied printing functions and rules list from course staff
 
-attributes.h:
-for hw3:- contains declaration for our type for YYSTYPE
-
-Makefile-hw2:
+makefile:
 to build the project
 
 parser.ypp:
@@ -19,3 +16,10 @@ lexical analyzer definition
 
 selfcheck-hw2:
 supplied bash script from course staff to check our hw
+
+tests/hw2-tests:
+2 official course tests
+
+tests/students_tests:
+34 tests written by students, run with python script
+
