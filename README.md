@@ -1,25 +1,25 @@
 Theory of Compilation spring 23 HW2: building a parser with Bison
 
-** files:
+**files:**
 
-output.cpp, output.hpp:
+• output.cpp, output.hpp:
 supplied printing functions and rules list from course staff
 
-makefile:
+• makefile:
 to build the project
 
-parser.ypp:
+• parser.ypp:
 parser definition including tokens, rules and main function
 
-scanner.flex:
+• scanner.flex:
 lexical analyzer definition
 
-selfcheck-hw2:
+• selfcheck-hw2:
 supplied bash script from course staff to check our hw
 
-tests/hw2-tests:
+• tests/hw2-tests:
 2 official course tests
 
-tests/students_tests:
+• tests/students_tests:
 34 tests written by students, run with python script
 
