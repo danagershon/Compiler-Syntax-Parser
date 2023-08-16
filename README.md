@@ -2,7 +2,7 @@ Theory of Compilation spring 23 HW2: building a bottom-up parser with Bison
 
 **files:**
 
-• output.cpp, output.hpp:
+• output.*:
 supplied printing functions and rules list from course staff
 
 • makefile:
