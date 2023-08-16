@@ -1,4 +1,4 @@
-Theory of Compilation spring 23 HW2: building a bottom-up parser with Bison
+Theory of Compilation HW2: building a bottom-up parser with Bison
 
 **files:**
 
