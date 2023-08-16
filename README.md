@@ -1,3 +1,5 @@
+# Compiler Syntax Parser
+
 Theory of Compilation HW2: building a bottom-up parser with Bison
 
 **files:**
